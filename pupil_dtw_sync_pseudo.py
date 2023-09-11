@@ -9,7 +9,7 @@ from scipy import stats
 
 # predefine inputs
 root_dir = '/media/lucab/data_hdd/CommGame_pupil_resampled'
-session_names = ['BG1', 'BG2', 'BG3', 'BG4']
+# session_names = ['BG1', 'BG2', 'BG3', 'BG4']
 cond = 'unimodális'
 
 # skip these files
@@ -266,8 +266,8 @@ for paired_file in paired_files:
 print(len(dtw_mean_results))
 print(len(paired_ids_pairNo), len(paired_ids_session))
 
-pair_numbers = np.array(np.unique(paired_ids_pairNo))
-sessions = np.array(np.unique(session_names))
+# pair_numbers = np.array(np.unique(paired_ids_pairNo))
+# sessions = np.array(np.unique(session_names))
 df_tmp = np.column_stack((paired_ids_pairNo[:, 0], paired_ids_session[:, 0], dtw_mean_results))
 print(dtw_mean_results)
 
